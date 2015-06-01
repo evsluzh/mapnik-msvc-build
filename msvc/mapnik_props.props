@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>C:\mapnik-2.3.x\include;C:\sim-repo\ext\include;C:\mapnik-2.3.x\deps\agg\include;C:\mapnik-2.3.x\other\proj-4.9.1\proj-4.9.1\src;C:\mapnik-2.3.x\deps;C:\mapnik-2.3.x\other\icu\include;C:\mapnik-2.3.x\other\freetype-2.4.9\freetype-2.4.9\include;C:\sim-repo\ext\include\zlib;C:\mapnik-2.3.x\other\libwebp-0.4.3-windows-x64\libwebp-0.4.3-windows-x64\include;C:\sim-repo\ext\include\libpng;C:\mapnik-2.3.x;C:\Python27\include;C:\mapnik-2.3.x\other\libxml2-2.9.1-msvc-x64\2.9.1\include;C:\mapnik-2.3.x\other\postgresql-9.4.2-1-windows-x64-binaries\pgsql\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\sim-repo\ext\lib\boost;C:\mapnik-2.3.x\other\icu\lib64;C:\mapnik-2.3.x\other\libwebp-0.4.3-windows-x64\libwebp-0.4.3-windows-x64\lib;C:\mapnik-2.3.x\other\freetype-2.4.9\freetype-2.4.9\builds\win32\vc2010\x64\Release;C:\mapnik-2.3.x\other\libxml2-2.9.1-msvc-x64\2.9.1\lib;C:\sim-repo\ext\lib\zlib\release;C:\sim-repo\ext\lib\libpng16\release;C:\mapnik-2.3.x\other\libiconv-master\libiconv-master\lib;C:\sim-repo\ext\lib\python;C:\mapnik-2.3.x\other\postgresql-9.4.2-1-windows-x64-binaries\pgsql\lib;C:\mapnik-2.3.x\msvc\x64\Release;C:\mapnik-2.3.x\other\proj-4.9.1\proj-4.9.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>icudt.lib;icuin.lib;icuio.lib;icule.lib;iculx.lib;icutu.lib;icuuc.lib;proj.lib;freetype249.lib;zlib.lib;libpng16.lib;Ws2_32.lib;agg.lib;libxml2.lib;libiconv_a.lib;libwebp.lib;libcharset.lib;libpq.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_ALL_DYN_LIN;MAPNIK_THREADSAFE;MAPNIK_HAS_DLCFN;MAPNIK_USE_PROJ4;HAVE_PNG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
